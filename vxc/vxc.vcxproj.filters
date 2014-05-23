@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="core">
+      <UniqueIdentifier>{40e37baf-a40f-4489-8d0c-ff7f02947248}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="base">
+      <UniqueIdentifier>{3149b8dc-7a9d-429f-aede-ef5e7632afad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="renderer">
+      <UniqueIdentifier>{2b870a7b-4e87-40e2-b0fc-e4721910e916}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="script">
+      <UniqueIdentifier>{83435871-f8aa-4836-9e2a-e809204d41dc}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="log.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="base.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="renderer.cpp">
+      <Filter>renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="editor.cpp">
+      <Filter>renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="vm.cpp">
+      <Filter>script</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="log.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="base.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="renderer.h">
+      <Filter>renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="editor.h">
+      <Filter>renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="vm.h">
+      <Filter>script</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

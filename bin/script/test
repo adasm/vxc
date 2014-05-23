@@ -1,0 +1,96 @@
+
+void
+Camera::setView() {
+	glMatrixMode(GL_MODELVIEW);
+	checkGLErrors(AT);
+	glLoadIdentity();
+	checkGLErrors(AT);
+	if (__type == FPP) {
+		gluLookAt(
+				__eye.x, __eye.y, __eye.z,
+				(__center.x + __eye.x), (__center.y + __eye.y), (__center.z + __eye.z),
+				__up.x, __up.y, __up.z
+			);
+	} else if (__type == SPHERICAL) {
+		gluLookAt(
+				(__eye.x + __center.x), (__eye.y + __center.y), (__eye.z + __center.z),
+				__center.x, __center.y, __center.z,
+				__up.x, __up.y, __up.z
+			);
+	}
+	checkGLErrors(AT);
+
+	glGetFloatv(GL_PROJECTION_MATRIX, __projectionMatrix);
+	checkGLErrors(AT);
+}
+
+void
+Camera::moveCamera(GLdouble movX, GLdouble movY, GLdouble movZ) {
+	if (__type == FPP) {
+		__eye.x += (__center.x * movZ);
+		__eye.z += (__center.z * movZ);
+		__eye.x += (__center.z * movX * -1);
+		__eye.z += (__center.x * movX);
+		__eye.y += movY / 10;
+	} else if (__type == SPHERICAL) {
+		__center.x += (__eye.x * movZ * -0.1);
+		__center.z += (__eye.z * movZ * -0.1);
+		__center.x += (__eye.z * movX * 0.1);
+		__center.z += (__eye.x * movX * -0.1);
+		__center.y += movY / 10;
+	}
+}
+
+void
+Camera::rotateCamera(GLdouble _x, GLdouble _y, GLdouble) {
+	if (__type == FPP) {
+		__angle.x -= (GLdouble)(_x / 100);
+		__angle.y += (GLdouble)(_y / 200);
+	
+		if (__angle.y > 90 * PIdiv180) __angle.y = 90 * PIdiv180;
+		else if (__angle.y < -90 * PIdiv180) __angle.y = -90 * PIdiv180;
+	
+		__center.y = sin(__angle.y);
+		__center.x = cos(__angle.x - 90);
+		__center.z = sin(__angle.x - 90);
+	
+		__center.normalize();
+	} else if (__type == SPHERICAL) {
+		__angle.x += (GLdouble)(_x / 200);
+		__angle.y -= (GLdouble)(_y / 200);
+		
+		__eye.x = -1 * cos(__angle.y) * sin(__angle.x - 90);
+		__eye.y = sin(__angle.y);
+		__eye.z = cos(__angle.y) * cos(__angle.x - 90);
+		
+		__eye.normalize();
+		__eye *= 20;
+	}
+}
+
+void
+Camera::lookAt(GLdouble x, GLdouble y, GLdouble z) {
+	__center = sVector(x, y, z);
+	if (__type == FPP) {
+		__center += __eye;
+		__center.normalize();
+	}
+	if ((sGlobalConfig::DEBUGGING & D_PARAMS) == D_PARAMS)
+		cout << LOG_INFO << "LookAt: " << __center.x << ", " << __center.y << ", " << __center.z;
+}
+
+sVector
+Camera::getEye() {
+	if (__type == FPP)
+		return __eye;
+	else 
+		return __eye + __center;
+}
+
+sVector
+Camera::getCenter() {
+	if (__type == FPP)
+		return __center + __eye;
+	else
+		return __center;
+}

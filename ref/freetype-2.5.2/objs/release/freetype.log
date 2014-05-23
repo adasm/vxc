@@ -1,0 +1,115 @@
+﻿Build started 2014-02-19 15:12:52.
+     1>Project "E:\vxc\ref\freetype-2.5.2\builds\windows\vc2010\freetype.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I..\..\..\include /nologo /W4 /WX- /MP /O2 /Ob1 /Oy- /D NDEBUG /D WIN32 /D _LIB /D _CRT_SECURE_NO_WARNINGS /D FT2_BUILD_LIBRARY /D _MBCS /GF /Gm- /EHsc /MD /GS /Gy /fp:precise /Za /Zc:wchar_t /Zc:forScope /Fo".\..\..\..\objs\release\\" /Fd".\..\..\..\objs\release\vc120.pdb" /Gd /TC /wd4001 /analyze- /errorReport:prompt ..\..\..\src\autofit\autofit.c ..\..\..\src\bdf\bdf.c ..\..\..\src\cff\cff.c ..\..\..\src\base\ftbase.c ..\..\..\src\base\ftbitmap.c ..\..\..\src\cache\ftcache.c ..\..\..\src\base\ftfstype.c ..\..\..\src\base\ftgasp.c ..\..\..\src\base\ftglyph.c ..\..\..\src\gzip\ftgzip.c ..\..\..\src\base\ftinit.c ..\..\..\src\lzw\ftlzw.c ..\..\..\src\base\ftstroke.c ..\..\..\src\base\ftsystem.c ..\..\..\src\smooth\smooth.c ..\..\..\src\base\ftbbox.c ..\..\..\src\base\ftmm.c ..\..\..\src\base\ftpfr.c ..\..\..\src\base\ftsynth.c ..\..\..\src\base\fttype1.c ..\..\..\src\base\ftwinfnt.c ..\..\..\src\base\ftxf86.c ..\..\..\src\base\ftlcdfil.c ..\..\..\src\base\ftgxval.c ..\..\..\src\base\ftotval.c ..\..\..\src\base\ftpatent.c ..\..\..\src\pcf\pcf.c ..\..\..\src\pfr\pfr.c ..\..\..\src\psaux\psaux.c ..\..\..\src\pshinter\pshinter.c ..\..\..\src\psnames\psmodule.c ..\..\..\src\raster\raster.c ..\..\..\src\sfnt\sfnt.c ..\..\..\src\truetype\truetype.c ..\..\..\src\type1\type1.c ..\..\..\src\cid\type1cid.c ..\..\..\src\type42\type42.c ..\..\..\src\winfonts\winfnt.c
+         autofit.c
+         bdf.c
+         cff.c
+         ftbase.c
+         ftbitmap.c
+         ftcache.c
+         ftfstype.c
+         ftgasp.c
+         ftglyph.c
+         ftgzip.c
+         ftinit.c
+         ftlzw.c
+         ftstroke.c
+     1>e:\vxc\ref\freetype-2.5.2\src\autofit\aflatin.c(554): warning C4701: potentially uninitialized local variable 'p_first' used
+     1>e:\vxc\ref\freetype-2.5.2\src\autofit\aflatin.c(600): warning C4701: potentially uninitialized local variable 'p_last' used
+         ftsystem.c
+         smooth.c
+         ftbbox.c
+         ftmm.c
+         ftpfr.c
+         ftsynth.c
+         fttype1.c
+         ftwinfnt.c
+         ftxf86.c
+         ftlcdfil.c
+         ftgxval.c
+         ftotval.c
+         ftpatent.c
+         pcf.c
+         pfr.c
+         psaux.c
+         pshinter.c
+         psmodule.c
+         raster.c
+         sfnt.c
+         truetype.c
+         type1.c
+     1>e:\vxc\ref\freetype-2.5.2\src\truetype\ttgload.c(102): warning C4244: '=' : conversion from 'FT_Pos' to 'FT_Short', possible loss of data (..\..\..\src\truetype\truetype.c)
+     1>e:\vxc\ref\freetype-2.5.2\src\truetype\ttgload.c(108): warning C4244: '=' : conversion from 'FT_Pos' to 'FT_Short', possible loss of data (..\..\..\src\truetype\truetype.c)
+         type1cid.c
+     1>e:\vxc\ref\freetype-2.5.2\src\sfnt\sfobjs.c(504): warning C4244: '=' : conversion from 'FT_ULong' to 'FT_Byte', possible loss of data (..\..\..\src\sfnt\sfnt.c)
+     1>e:\vxc\ref\freetype-2.5.2\src\sfnt\sfobjs.c(505): warning C4244: '=' : conversion from 'int' to 'FT_Byte', possible loss of data (..\..\..\src\sfnt\sfnt.c)
+     1>e:\vxc\ref\freetype-2.5.2\src\sfnt\sfobjs.c(506): warning C4244: '=' : conversion from 'FT_UInt' to 'FT_Byte', possible loss of data (..\..\..\src\sfnt\sfnt.c)
+     1>e:\vxc\ref\freetype-2.5.2\src\sfnt\sfobjs.c(507): warning C4244: '=' : conversion from 'FT_UInt' to 'FT_Byte', possible loss of data (..\..\..\src\sfnt\sfnt.c)
+     1>e:\vxc\ref\freetype-2.5.2\src\sfnt\sfobjs.c(508): warning C4244: '=' : conversion from 'FT_UInt' to 'FT_Byte', possible loss of data (..\..\..\src\sfnt\sfnt.c)
+     1>e:\vxc\ref\freetype-2.5.2\src\sfnt\sfobjs.c(645): warning C4244: '=' : conversion from 'FT_ULong' to 'FT_Byte', possible loss of data (..\..\..\src\sfnt\sfnt.c)
+     1>e:\vxc\ref\freetype-2.5.2\src\sfnt\sfobjs.c(646): warning C4244: '=' : conversion from 'FT_ULong' to 'FT_Byte', possible loss of data (..\..\..\src\sfnt\sfnt.c)
+     1>e:\vxc\ref\freetype-2.5.2\src\sfnt\sfobjs.c(647): warning C4244: '=' : conversion from 'FT_ULong' to 'FT_Byte', possible loss of data (..\..\..\src\sfnt\sfnt.c)
+     1>e:\vxc\ref\freetype-2.5.2\src\sfnt\sfobjs.c(648): warning C4244: '=' : conversion from 'FT_ULong' to 'FT_Byte', possible loss of data (..\..\..\src\sfnt\sfnt.c)
+         type42.c
+     1>e:\vxc\ref\freetype-2.5.2\src\sfnt\ttsbit.c(291): warning C4244: '=' : conversion from 'FT_UInt' to 'FT_UShort', possible loss of data (..\..\..\src\sfnt\sfnt.c)
+     1>e:\vxc\ref\freetype-2.5.2\src\sfnt\ttsbit.c(292): warning C4244: '=' : conversion from 'FT_UInt' to 'FT_UShort', possible loss of data (..\..\..\src\sfnt\sfnt.c)
+     1>e:\vxc\ref\freetype-2.5.2\src\sfnt\ttsbit.c(803): warning C4244: 'initializing' : conversion from 'FT_Short' to 'FT_Char', possible loss of data (..\..\..\src\sfnt\sfnt.c)
+     1>e:\vxc\ref\freetype-2.5.2\src\sfnt\ttsbit.c(804): warning C4244: 'initializing' : conversion from 'FT_Short' to 'FT_Char', possible loss of data (..\..\..\src\sfnt\sfnt.c)
+     1>e:\vxc\ref\freetype-2.5.2\src\sfnt\ttsbit.c(805): warning C4244: 'initializing' : conversion from 'FT_UShort' to 'FT_Byte', possible loss of data (..\..\..\src\sfnt\sfnt.c)
+     1>e:\vxc\ref\freetype-2.5.2\src\sfnt\ttsbit.c(806): warning C4244: 'initializing' : conversion from 'FT_Short' to 'FT_Char', possible loss of data (..\..\..\src\sfnt\sfnt.c)
+     1>e:\vxc\ref\freetype-2.5.2\src\sfnt\ttsbit.c(807): warning C4244: 'initializing' : conversion from 'FT_Short' to 'FT_Char', possible loss of data (..\..\..\src\sfnt\sfnt.c)
+     1>e:\vxc\ref\freetype-2.5.2\src\sfnt\ttsbit.c(808): warning C4244: 'initializing' : conversion from 'FT_UShort' to 'FT_Byte', possible loss of data (..\..\..\src\sfnt\sfnt.c)
+         winfnt.c
+     1>e:\vxc\ref\freetype-2.5.2\src\sfnt\ttsbit.c(1352): warning C4244: '=' : conversion from 'FT_Int' to 'FT_Short', possible loss of data (..\..\..\src\sfnt\sfnt.c)
+     1>e:\vxc\ref\freetype-2.5.2\src\sfnt\ttsbit.c(1353): warning C4244: '=' : conversion from 'int' to 'FT_Short', possible loss of data (..\..\..\src\sfnt\sfnt.c)
+     1>e:\vxc\ref\freetype-2.5.2\src\sfnt\ttsbit.c(1033): warning C4701: potentially uninitialized local variable 'loader' used
+     1>e:\vxc\ref\freetype-2.5.2\src\sfnt\ttsbit.c(1033): warning C4703: potentially uninitialized local pointer variable 'loader' used
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I..\..\..\include /nologo /W4 /WX- /MP /O2 /Ob1 /Oy- /D NDEBUG /D WIN32 /D _LIB /D _CRT_SECURE_NO_WARNINGS /D FT2_BUILD_LIBRARY /D _MBCS /GF /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo".\..\..\..\objs\release\\" /Fd".\..\..\..\objs\release\vc120.pdb" /Gd /TC /wd4001 /analyze- /errorReport:prompt ..\ftdebug.c
+         ftdebug.c
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\Lib.exe /OUT:".\..\..\..\objs\win32\vc2010\freetype252.lib" /NOLOGO .\..\..\..\objs\release\autofit.obj
+         .\..\..\..\objs\release\bdf.obj
+         .\..\..\..\objs\release\cff.obj
+         .\..\..\..\objs\release\ftbase.obj
+         .\..\..\..\objs\release\ftbitmap.obj
+         .\..\..\..\objs\release\ftcache.obj
+         .\..\..\..\objs\release\ftdebug.obj
+         .\..\..\..\objs\release\ftfstype.obj
+         .\..\..\..\objs\release\ftgasp.obj
+         .\..\..\..\objs\release\ftglyph.obj
+         .\..\..\..\objs\release\ftgzip.obj
+         .\..\..\..\objs\release\ftinit.obj
+         .\..\..\..\objs\release\ftlzw.obj
+         .\..\..\..\objs\release\ftstroke.obj
+         .\..\..\..\objs\release\ftsystem.obj
+         .\..\..\..\objs\release\smooth.obj
+         .\..\..\..\objs\release\ftbbox.obj
+         .\..\..\..\objs\release\ftmm.obj
+         .\..\..\..\objs\release\ftpfr.obj
+         .\..\..\..\objs\release\ftsynth.obj
+         .\..\..\..\objs\release\fttype1.obj
+         .\..\..\..\objs\release\ftwinfnt.obj
+         .\..\..\..\objs\release\ftxf86.obj
+         .\..\..\..\objs\release\ftlcdfil.obj
+         .\..\..\..\objs\release\ftgxval.obj
+         .\..\..\..\objs\release\ftotval.obj
+         .\..\..\..\objs\release\ftpatent.obj
+         .\..\..\..\objs\release\pcf.obj
+         .\..\..\..\objs\release\pfr.obj
+         .\..\..\..\objs\release\psaux.obj
+         .\..\..\..\objs\release\pshinter.obj
+         .\..\..\..\objs\release\psmodule.obj
+         .\..\..\..\objs\release\raster.obj
+         .\..\..\..\objs\release\sfnt.obj
+         .\..\..\..\objs\release\truetype.obj
+         .\..\..\..\objs\release\type1.obj
+         .\..\..\..\objs\release\type1cid.obj
+         .\..\..\..\objs\release\type42.obj
+         .\..\..\..\objs\release\winfnt.obj
+         freetype.vcxproj -> E:\vxc\ref\freetype-2.5.2\builds\windows\vc2010\.\..\..\..\objs\win32\vc2010\freetype252.lib
+     1>Done Building Project "E:\vxc\ref\freetype-2.5.2\builds\windows\vc2010\freetype.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.42
