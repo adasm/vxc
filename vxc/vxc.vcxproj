@@ -41,8 +41,8 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>E:\vxc\ref\devil-1.7.8\include;E:\vxc\ref\glew-1.10.0\include;E:\vxc\ref\freetype-2.5.2\include;E:\vxc\ref\glm\glm;E:\vxc\ref\lua-5.2.1\include;E:\vxc\ref\freeglut\include;E:\vxc\ref\boost_1_55_0;$(IncludePath)</IncludePath>
-    <LibraryPath>E:\vxc\ref\devil-1.7.8\lib;E:\vxc\ref\glew-1.10.0\lib\Release\Win32;E:\vxc\ref\freetype-2.5.2\objs\win32\vc2010;E:\vxc\ref\lua-5.2.1;E:\vxc\ref\freeglut\lib;E:\vxc\ref\boost_1_55_0\libs;$(LibraryPath)</LibraryPath>
+    <IncludePath>..\ref\devil-1.7.8\include;..\ref\glew-1.10.0\include;..\ref\freetype-2.5.2\include;..\ref\glm\glm;..\ref\lua-5.2.1\include;..\ref\freeglut\include;..\ref\boost_1_55_0;$(IncludePath)</IncludePath>
+    <LibraryPath>..\ref\devil-1.7.8\lib;..\ref\glew-1.10.0\lib\Release\Win32;..\ref\freetype-2.5.2\objs\win32\vc2010;..\ref\lua-5.2.1;..\ref\freeglut\lib;..\ref\boost_1_55_0\libs;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
